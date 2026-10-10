@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+// ab dekhoo idr sab sa pehla mena kia kya? ek variable lia 
+// hamay bss 5 cheezain chiya user saaa kee vo positive ha negative ha ya even ha ya odd haa or kia vo 100 sa bara ha ya chootaa haa theek haa itna ok ha? yes , ab ya dekhoo kee hamay bss ek number chiys matlb hamay bss ek container bnanna hoga lets make a container then 
+    // 1. Variable declaration
+    int number; // here is the container we made ab is container ma user sa input lena hogaaa tou user sa input le leta han 
+
+    // 2. Taking input from the user
+    cout << "Enter a number: "; //idr user ko btaiya bhaiya G apne input tou do zraa 
+    cin >> number; // idr ham naa container ma value ko lee liaa jo be user naa input kee acha ab itna sa code kia kra gaa ek min
+
+    // 3. Displaying the base report
+    cout << "Number: " << number << "\n"; //ab ham na user ko idr btaiya haa bhaiya G apne ya input dia thaa see the vairble that we are calling 
+
+    // Type: Positive, Negative, or Zero
+    cout << "Type: ";
+    if (number > 0) {
+        cout << "Positive\n";
+    } 
+    else if (number < 0) {
+        cout << "Negative\n";
+    } 
+    else {
+        cout << "Zero\n";
+    }
+
+    // Parity: Even or Odd (using modulus %)
+    cout << "Parity: ";
+    if (number % 2 == 0) {
+        cout << "Even\n";
+    } 
+    else {
+        cout << "Odd\n";
+    }
+
+    // Greater than 100
+    cout << "Greater than 100: ";
+    if (number > 100) {
+        cout << "Yes\n";
+    } 
+    else {
+        cout << "No\n";
+    }
+
+    // Square calculation
+    cout << "Square: " << number * number << "\n";
+
+    return 0;
+}
+
+
